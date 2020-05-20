@@ -108,40 +108,30 @@
  }
 
  .brand{
-    width: 60%;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+	width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
  }
 
- .brand-ig{
-    width: 30%;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+ .brand-ig, .brand-line, .brand-wa{
+    width: 40%;
+	object-fit: cover;
+    object-position: center;
  }
 
- .brand-line{
-    width: 30%;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
- }
+ .container {
+	display: flex;
+	flex-direction: row;
+	background-color: transparent;
+}
 
- .brand-wa{
-    width: 30%;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
- }
+.box {
+	flex-grow: 1;
+	flex-basis: 25%;
+	align-content: center;
+	align-self: center;
+}
 
  main {
     padding: 12px;
@@ -149,8 +139,16 @@
  }
 
  /* warna text */
-h2,h3{
-    color: #00a2c6;
+h2{
+    color: #142850;
+}
+
+h3{
+    color:#035aa6;
+}
+
+h4{
+    color:#162447;
 }
 
 p{
@@ -175,40 +173,48 @@ p#third {
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	height: 100%;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     padding: 12px;
+}
+
+.contact{
+	justify-content: center;
+	height: 100%;
+	display: flexbox;
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
 /* aside */
 .sosmed-content {
-	text-align: right;
-	line-height: 400px;
-	width: 20%;
-	background-color: transparent;
+	text-align: center;
+	align-self: center;
+	width: 25%;
+	/* background-color: yellow; */
 	float: left;
 }
 
 .ig-content {
-	align-items: center;
-	line-height: 400px;
-	width: 26.66%;
-	background-color: red;
+	text-align: center;
+	align-self: center;
+	width: 25%;
+	/* background-color: red; */
 	float: left;
 }
 
 .line-content {
 	text-align: center;
-	line-height: 400px;
-	width: 26.66%;
-	background-color: magenta;
+	align-self: center;
+	width: 25%;
+	/* background-color: magenta; */
 	float: left;
 }
 
 .wa-content {
 	text-align: center;
-	line-height: 400px;
-	width: 26.66%;
-	background-color: green;
+	align-self: center;
+	width: 25%;
+	/* background-color: green; */
 	float: left;
 }
 
