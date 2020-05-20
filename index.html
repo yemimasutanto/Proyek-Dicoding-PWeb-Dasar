@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submission</title>
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <aside>
         <article>
             <header>
-                <nav>
-                    <ul>
-                       <li><a href="#beranda">Beranda</a></li>
-                       <li><a href="#foto">Koleksi Foto</a></li>
-                       <li><a href="#filter">Koleksi Filter</a></li>
-                    </ul>
-                </nav>
+                <div class="navbar">
+                    <a href="#beranda">Beranda</a>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">Koleksi Foto
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                        <a href="#2019">2019</a>
+                        <a href="#2018">2018</a>
+                        <a href="#2017">2017</a>
+                        </div>
+                    </div> 
+                    <a href="#filter">Koleksi Filter</a>
+                </div>
             </header>
             <main>
                 <div class="left-content">
                     <article id="beranda" class="card">
                         <h2 id="beranda">Welcome to Pootreth!</h2>
                         <img src="assets/image/hello.jpg" class=
-                        "featured-image" alt="sejarah">
+                        "featured-image" alt="beranda">
                     </article>
                     <article id="foto" class="card">
                         <article id="2019">
@@ -40,6 +47,9 @@
                                 <article>
                                     <h4>Trip to Banyuwangi</h3>
                                 </article>
+                                <article>
+                                    <h4>Schematics 2019</h4>
+                                </article>
                         </article>
                         <article id="2018"> 
                             <h3 id="2018">2018</h3>
@@ -53,7 +63,7 @@
                                     <h4>Bambu Forest</h3>
                                 </article>
                                 <article>
-                                    <h4>Trip to Banyuwangi</h3>
+                                    <h4>Schematics 2018</h3>
                                 </article>
                         </article>
                         <article id="2017">
@@ -64,22 +74,53 @@
                                 <article>
                                     <h4>Hunting Bebas</h3>
                                 </article>
+                                <article>
+                                    <h4>Model</h3>
+                                </article>
                         </article>
                     </article>
                     <article id="filter" class="card">
                         <h3 id="filter">Koleksi Filter</h3>
                     </article>
                 </div>
-                <div class="right-content">
-                    <h3>Right Content</h3>
-                </div>
-                <div class="content">
-                </div>
+                <aside>
+                    <div class="right-content">
+                        <header>
+                            <article>
+                                <h3 align="center">Yemima Sutanto</h3>
+                                <figure>
+                                    <img src="assets/image/hello.jpg" class="brand" align="center">
+                                </figure>
+                        </header>
+                        <section>
+                            <div class="sosmed-content">
+                                <h4>Find Us</h4>
+                            </div>
+                            <div class="ig-content">
+                                <a href="https://instagram.com/pootreth">
+                                    <img src="assets/image/ig.png" class="brand-ig">
+                                </a>
+                            </div>
+                            <div class="line-content">
+                                <a href="https://lin.ee/DWAzFJh8">
+                                    <img src="assets/image/line.png" class="brand-line">
+                                </a>
+                            </div>
+                            <div class="wa-content">
+                                <a href="https://api.whatsapp.com/send?phone=6281357657416">
+                                    <img src="assets/image/wa.png" class="brand-wa">
+                                </a>
+                            </div>
+                        </section>
+                        </article>
+                    </div>
+                </aside>
             </main>
             <footer>
                 <p>@pootreth &#169; 2020, Pootreth</p>
             </footer>
         </article>
     </aside>
+    <script src="assets/dropdown.js"></script>
 </body>
 </html>
