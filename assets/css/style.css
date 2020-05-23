@@ -221,28 +221,8 @@ footer {
 	}
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 360px) {
-	.left-content{
-		width: 100%;
-	}
-	.right-content{
-		width: fit-content;
-	}
-}
-
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.left-content{
-		width: 75%;
-	}
-	.right-content{
-		width: 25%;
-	}
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
 	.left-content{
 		width: 75%;
 	}
@@ -254,9 +234,9 @@ footer {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	.left-content{
-		width: 75%
+		width: 78%
 	}
 	.right-content{
-		width: 25%;
+		width: 22%;
 	}
 }
