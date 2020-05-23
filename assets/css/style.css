@@ -18,8 +18,14 @@
     text-decoration: none;
  }
 
+ header{
+	 display: inline;
+	 position: sticky;
+ }
+
  .navbar {
 	overflow: hidden;
+	position: sticky;
 	background-color: #333;
 	font-family: "SF Pro Display", sans-serif;
   }
@@ -83,7 +89,6 @@
  .left-content {
     width: 75%;
     background-color: #FFFFFF;
-    /* digunakan untuk memindahkan posisi elemen ke sisi kiri container */
     float: left;
 }
 
@@ -99,7 +104,6 @@
 	height: 100%;
     padding-left: 10px;
     background-color: #e1f4f3;
-    /* digunakan untuk memindahkan posisi elemen ke sisi kanan container */
     float: right;
 }
 
@@ -149,6 +153,10 @@
 	object-fit: fill;
 }
 
+.brand-1{
+	width: 10%;
+}
+
  main {
     padding: 12px;
     overflow: auto;
@@ -156,34 +164,22 @@
 
  /* warna text */
 h2{
+	font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     color: #142850;
 }
 
 h3{
+	font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     color:#035aa6;
 }
 
 h4{
+	font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     color:#3797a4;
 }
 
 p{
-	font-family: "SF Pro Display", Verdana, sans-serif
-}
-
-p#first {
-   text-indent: 2em;
-   text-align: justify;
-}
- 
-p#second {
-   text-indent: 10%;
-   text-align: right;
-}
- 
-p#third {
-   text-indent: -35px;
-   text-align: right;
+	font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
 }
 
 .card {
@@ -202,35 +198,10 @@ p#third {
 }
 
 /* aside */
-.sosmed-content {
+.sosmed-content, .ig-content, .line-content, .wa-content{
 	text-align: center;
 	align-self: center;
 	width: 25%;
-	/* background-color: yellow; */
-	float: left;
-}
-
-.ig-content {
-	text-align: center;
-	align-self: center;
-	width: 25%;
-	/* background-color: red; */
-	float: left;
-}
-
-.line-content {
-	text-align: center;
-	align-self: center;
-	width: 25%;
-	/* background-color: magenta; */
-	float: left;
-}
-
-.wa-content {
-	text-align: center;
-	align-self: center;
-	width: 25%;
-	/* background-color: green; */
 	float: left;
 }
 
@@ -241,90 +212,51 @@ footer {
     font-weight: bold;
  }
 
- @media screen and (max-width: 960px) {
- 
-	.header {
-		position:inherit;
-	}
- 
-	.wrap {
-		width: 90%;
-		margin:25px auto;
-	}
-	.sidebar {
-		width:100%;
-		margin:25px 0 0;
-		float:right;
-	}
- 
-	.sidebar .widget {
-		padding:5%;
-	}
- 
-	nav.menu ul {
+ @media only screen and (min-width : 320px) {
+	.left-content{
 		width: 100%;
 	}
- 
-	nav.menu ul {
-		float:inherit;
+	.right-content{
+		width: fit-content;
 	}
- 
-	nav.menu ul li {
-		float:inherit;
-		margin:0;
-	}
- 
-	nav.menu ul a {
-		padding:15px;
-		font-size: 16px;
-		border-top:1px solid #1abf9f;
-		border-bottom:1px solid #16a085;
-	}
- 
-	.blog {
-		width:90%;
-	}
- 
-	.conteudo {
-		float:inherit;
-		margin:0 auto 25px;
-		width:101%;
-		border:1px solid #dedede;
-		padding:5%;  
-		background: #fff;
-	}
- 
-	.conteudo img {
-		max-width: 110%;
-		margin:0 0 25px -5%;
-		min-width: 110%;
-	}
- 
-	.conteudo .continue-lendo:hover {
-		margin-left:0;
-	}
- 
 }
- 
-@media screen and (max-width: 460px) {
- 
-	nav.menu ul a {
-		padding:15px;
-		font-size: 14px;
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 360px) {
+	.left-content{
+		width: 100%;
 	}
- 
-	.sidebar {
-		display:none
+	.right-content{
+		width: fit-content;
 	}
-	.post-info {
-		display:none;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.left-content{
+		width: 75%;
 	}
- 
-	.conteudo {
-		margin:25px auto;
+	.right-content{
+		width: 25%;
 	}
- 
-	.conteudo img {
-		margin:-5% 0 25px -5%;
-	}			
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.left-content{
+		width: 75%;
+	}
+	.right-content{
+		width: 25%;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.left-content{
+		width: 75%
+	}
+	.right-content{
+		width: 25%;
+	}
 }
